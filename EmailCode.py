@@ -85,7 +85,7 @@ def main():
     pass_count = 0
     fail_count = 0
 
-    for row in range(2, 5):  # 2, sheet.max_row + 1
+    for row in range(2, sheet.max_row + 1):  # 2, sheet.max_row + 1
         if sheet[f'A{row}'].value is None:
             break
         print(f"Processing row {row}...")
@@ -164,7 +164,7 @@ def main():
             for col in 'FGHIJKL':
                 sheet[f'{col}{row}'] = "ERROR"
 
-    total_test_cases = sum(1 for row in range(2, 5) if sheet[f'A{row}'].value is not None)
+    total_test_cases = sum(1 for row in range(2, sheet.max_row + 1) if sheet[f'A{row}'].value is not None)
     pass_percentage = (pass_count / total_test_cases) * 100 if total_test_cases > 0 else 0
     fail_percentage = (fail_count / total_test_cases) * 100 if total_test_cases > 0 else 0
 
