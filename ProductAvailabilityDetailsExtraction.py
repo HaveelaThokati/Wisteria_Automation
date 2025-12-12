@@ -77,8 +77,9 @@ def process_excel(file_path):
         print(f"Row {row} processed — Status: {status_code}, Remark: {remark}")
 
     wb.save(file_path)
-    print("✅ Excel updated and saved:", file_path)
+    print("Excel updated and saved:", file_path)
 
 # Run the function on your Excel file
 excel_file = "C:/Users/Haveela/Downloads/ID_Extraction_Updated.xlsx"
 process_excel(excel_file)
+
