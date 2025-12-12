@@ -91,8 +91,9 @@ def process_excel(file_path):
 
     # Save updated Excel
     wb.save(file_path)
-    print("✅ Excel updated and saved:", file_path)
+    print(" Excel updated and saved:", file_path)
 
 # Run the function on your Excel file
 excel_file = "C:/Users/Haveela/Downloads/damageExtraction.xlsx"
 process_excel(excel_file)
+
